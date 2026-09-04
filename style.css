@@ -126,8 +126,48 @@ h1 {
   color: #f1ece4;
 }
 
+.game-description {
+  max-width: 440px;
+  margin: 10px auto 20px;
+  padding: 0 24px;
+
+  font-size: 0.95rem;
+  line-height: 1.55;
+
+  color: #aeb9c2;
+}
+
+.game-details {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+
+  margin: 0 auto 22px;
+  padding: 0 20px;
+
+  font-size: 0.9rem;
+  color: #8fa0ad;
+}
+
+.game-details strong {
+  color: #d5dce1;
+  font-weight: 600;
+}
+
+.chill-factor {
+  font-weight: 600;
+}
+
+.chill {
+  color: #78c99a;
+}
+
+.mayhem {
+  color: #e8785d;
+}
+
 .coming-soon {
-  margin: 6px 20px 26px;
+  margin: 0 20px 26px;
 
   font-size: 1.05rem;
   font-weight: 600;
