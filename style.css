@@ -303,10 +303,7 @@ h1 {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgb(255 255 255 / 14%);
-  clip-path: polygon(
-    12px 0, 100% 0, 100% calc(100% - 12px),
-    calc(100% - 12px) 100%, 0 100%, 0 12px
-  );
+  border-radius: 8px;
 
   font-family: "Nunito", sans-serif;
   font-size: 0.78rem;
