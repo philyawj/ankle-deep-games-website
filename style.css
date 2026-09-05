@@ -3,22 +3,23 @@
 }
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
-  --parchment: #faf1de;
-  --parchment-deep: #f2e3c6;
-  --card: #fffaf0;
-  --ink: #3a2b20;
-  --ink-soft: #7a6a58;
-  --gold: #c8922f;
-  --gold-soft: #e8c581;
-  --lava: #cf4a35;
-  --lava-deep: #9c2f22;
-  --plum: #6a4c93;
-  --plum-deep: #4a3468;
-  --wave: #2f7bbf;
-  --chill: #3f8f5f;
-  --mayhem: #d1483a;
+  --parchment: #17110c;
+  --parchment-deep: #0c0805;
+  --card: #241b14;
+  --ink: #f3e8d8;
+  --ink-soft: #ab9884;
+  --gold: #d9a53c;
+  --gold-soft: #f0c874;
+  --lava: #e2604a;
+  --lava-deep: #b8402c;
+  --plum: #9575d1;
+  --plum-deep: #6a4c93;
+  --wave: #58a9e6;
+  --chill: #5cbb84;
+  --mayhem: #e2604a;
+  --gold-shadow: #8a641c;
 }
 
 body {
@@ -27,18 +28,18 @@ body {
 
   background-color: var(--parchment);
   background-image:
-    radial-gradient(circle at 50% 0%, #fffdf7 0%, var(--parchment) 46%, var(--parchment-deep) 100%),
+    radial-gradient(circle at 50% 0%, #2a1f16 0%, var(--parchment) 46%, var(--parchment-deep) 100%),
     repeating-linear-gradient(
       0deg,
-      rgb(120 90 50 / 5%) 0px,
-      rgb(120 90 50 / 5%) 1px,
+      rgb(255 220 170 / 4%) 0px,
+      rgb(255 220 170 / 4%) 1px,
       transparent 1px,
       transparent 42px
     ),
     repeating-linear-gradient(
       90deg,
-      rgb(120 90 50 / 5%) 0px,
-      rgb(120 90 50 / 5%) 1px,
+      rgb(255 220 170 / 4%) 0px,
+      rgb(255 220 170 / 4%) 1px,
       transparent 1px,
       transparent 42px
     );
@@ -97,7 +98,7 @@ body {
   box-shadow:
     0 0 0 7px var(--card),
     0 0 0 9px var(--gold-soft),
-    0 16px 30px rgb(58 43 32 / 22%);
+    0 16px 30px rgb(0 0 0 / 45%);
 }
 
 .tagline {
@@ -116,12 +117,12 @@ body {
   height: 22px;
   margin: 22px auto 8px;
 
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='22' viewBox='0 0 60 22'%3E%3Cpath d='M0 11 Q 15 0 30 11 T 60 11' fill='none' stroke='%232f7bbf' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='22' viewBox='0 0 60 22'%3E%3Cpath d='M0 11 Q 15 0 30 11 T 60 11' fill='none' stroke='%2358a9e6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
   background-position: center;
   background-size: 60px 22px;
 
-  opacity: 0.55;
+  opacity: 0.6;
 }
 
 /* ---------- main ---------- */
@@ -159,14 +160,14 @@ h1 {
   overflow: hidden;
 
   background: var(--card);
-  border: 2px solid rgb(58 43 32 / 12%);
+  border: 2px solid rgb(255 255 255 / 8%);
   border-radius: 22px;
 
   text-align: center;
 
   box-shadow:
-    0 14px 30px rgb(58 43 32 / 12%),
-    inset 0 1px 0 rgb(255 255 255 / 60%);
+    0 14px 30px rgb(0 0 0 / 35%),
+    inset 0 1px 0 rgb(255 255 255 / 6%);
 
   transition:
     transform 200ms ease,
@@ -185,7 +186,7 @@ h1 {
 }
 
 .card--tavern {
-  --accent-a: #7a5aa8;
+  --accent-a: var(--plum);
   --accent-b: var(--gold);
 }
 
@@ -197,11 +198,11 @@ h1 {
 .game-card:hover {
   transform: translateY(-8px);
 
-  border-color: rgb(58 43 32 / 22%);
+  border-color: rgb(255 255 255 / 16%);
 
   box-shadow:
-    0 24px 44px rgb(58 43 32 / 20%),
-    inset 0 1px 0 rgb(255 255 255 / 60%);
+    0 24px 44px rgb(0 0 0 / 50%),
+    inset 0 1px 0 rgb(255 255 255 / 8%);
 }
 
 .game-card:hover .die-badge {
@@ -218,7 +219,7 @@ h1 {
   height: 430px;
   padding: 26px;
 
-  background: linear-gradient(180deg, #f4ead6 0%, #ecdcbb 100%);
+  background: linear-gradient(180deg, #2c2116 0%, #180f09 100%);
 }
 
 .game-image-container img {
@@ -228,7 +229,7 @@ h1 {
   height: 100%;
 
   object-fit: contain;
-  filter: drop-shadow(0 10px 18px rgb(58 43 32 / 25%));
+  filter: drop-shadow(0 10px 18px rgb(0 0 0 / 45%));
 }
 
 .die-badge {
@@ -243,14 +244,15 @@ h1 {
   width: 40px;
   height: 40px;
 
-  background: var(--card);
+  background: linear-gradient(180deg, var(--gold-soft), var(--gold));
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 25%, 0% 75%);
 
-  font-family: "Press Start 2P", monospace;
-  font-size: 0.5rem;
-  color: var(--ink);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #4a3410;
 
-  box-shadow: 0 4px 10px rgb(58 43 32 / 30%);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 40%);
 
   transition: transform 220ms ease;
 }
@@ -294,14 +296,14 @@ h1 {
 
   padding: 7px 16px;
 
-  background: var(--parchment);
-  border: 1.5px solid rgb(58 43 32 / 14%);
+  background: rgb(255 255 255 / 5%);
+  border: 1.5px solid rgb(255 255 255 / 14%);
   border-radius: 999px;
 
   font-size: 0.9rem;
   color: var(--ink-soft);
 
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 70%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 8%);
 }
 
 .pill strong {
@@ -327,24 +329,27 @@ h1 {
   gap: 8px;
 
   margin: 0 20px 26px;
-  padding: 10px 18px;
+  padding: 12px 26px;
 
   background: linear-gradient(180deg, var(--gold-soft), var(--gold));
-  clip-path: polygon(
-    10px 0, calc(100% - 10px) 0, 100% 10px,
-    100% calc(100% - 10px), calc(100% - 10px) 100%,
-    10px 100%, 0 calc(100% - 10px), 0 10px
-  );
+  border-radius: 999px;
 
-  font-family: "Press Start 2P", monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.04em;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
   color: #4a3410;
 
   box-shadow:
-    0 6px 14px rgb(200 146 47 / 35%),
-    inset 0 1px 0 rgb(255 255 255 / 50%);
+    0 4px 0 var(--gold-shadow),
+    0 10px 20px rgb(0 0 0 / 35%),
+    inset 0 1px 0 rgb(255 255 255 / 40%);
+}
+
+.coming-soon span {
+  font-size: 1rem;
 }
 
 footer {
