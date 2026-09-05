@@ -167,7 +167,14 @@ h1 {
 }
 
 .coming-soon {
+  display: inline-block;
+
   margin: 0 20px 26px;
+  padding: 8px 12px;
+
+  background: rgb(148 167 183 / 8%);
+  border: 1px solid rgb(148 167 183 / 30%);
+  border-radius: 999px;
 
   font-size: 1.05rem;
   font-weight: 600;
@@ -175,6 +182,8 @@ h1 {
   text-transform: uppercase;
 
   color: #94a7b7;
+
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 5%);
 }
 
 footer {
