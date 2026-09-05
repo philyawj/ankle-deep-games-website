@@ -205,13 +205,7 @@ h1 {
     inset 0 1px 0 rgb(255 255 255 / 8%);
 }
 
-.game-card:hover .die-badge {
-  transform: rotate(18deg) scale(1.08);
-}
-
 .game-image-container {
-  position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,31 +224,6 @@ h1 {
 
   object-fit: contain;
   filter: drop-shadow(0 10px 18px rgb(0 0 0 / 45%));
-}
-
-.die-badge {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 40px;
-  height: 40px;
-
-  background: linear-gradient(180deg, var(--gold-soft), var(--gold));
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 25%, 0% 75%);
-
-  font-family: "Nunito", sans-serif;
-  font-size: 0.7rem;
-  font-weight: 800;
-  color: #4a3410;
-
-  box-shadow: 0 4px 10px rgb(0 0 0 / 40%);
-
-  transition: transform 220ms ease;
 }
 
 .game-card h2 {
@@ -386,11 +355,5 @@ footer {
 
   .game-image-container {
     height: 300px;
-  }
-
-  .die-badge {
-    width: 34px;
-    height: 34px;
-    font-size: 0.42rem;
   }
 }
