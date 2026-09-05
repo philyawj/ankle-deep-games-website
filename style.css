@@ -19,7 +19,6 @@
   --wave: #58a9e6;
   --chill: #5cbb84;
   --mayhem: #e2604a;
-  --gold-shadow: #8a641c;
 }
 
 body {
@@ -295,30 +294,57 @@ h1 {
 .coming-soon {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
 
   margin: 0 20px 26px;
-  padding: 12px 26px;
+  padding: 10px 20px 10px 16px;
 
-  background: linear-gradient(180deg, var(--gold-soft), var(--gold));
-  border-radius: 999px;
+  background: rgb(255 255 255 / 4%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgb(255 255 255 / 14%);
+  clip-path: polygon(
+    12px 0, 100% 0, 100% calc(100% - 12px),
+    calc(100% - 12px) 100%, 0 100%, 0 12px
+  );
 
   font-family: "Nunito", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 
-  color: #4a3410;
+  color: var(--ink);
 
   box-shadow:
-    0 4px 0 var(--gold-shadow),
-    0 10px 20px rgb(0 0 0 / 35%),
-    inset 0 1px 0 rgb(255 255 255 / 40%);
+    0 0 20px -6px var(--accent-b),
+    0 8px 18px rgb(0 0 0 / 35%);
 }
 
-.coming-soon span {
-  font-size: 1rem;
+.coming-soon::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+
+  background: var(--accent-b);
+  border-radius: 50%;
+  box-shadow: 0 0 8px 1px var(--accent-b);
+
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(0.7);
+  }
 }
 
 footer {
