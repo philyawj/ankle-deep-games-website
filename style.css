@@ -5,11 +5,11 @@
 :root {
   color-scheme: dark;
 
-  --parchment: #17110c;
-  --parchment-deep: #0c0805;
-  --card: #241b14;
-  --ink: #f3e8d8;
-  --ink-soft: #ab9884;
+  --bg: #172534;
+  --bg-deep: #080d12;
+  --card: #16232f;
+  --ink: #eef2f5;
+  --ink-soft: #93a4b0;
   --gold: #d9a53c;
   --gold-soft: #f0c874;
   --lava: #e2604a;
@@ -25,20 +25,20 @@ body {
   margin: 0;
   min-height: 100vh;
 
-  background-color: var(--parchment);
+  background-color: var(--bg);
   background-image:
-    radial-gradient(circle at 50% 0%, #2a1f16 0%, var(--parchment) 46%, var(--parchment-deep) 100%),
+    radial-gradient(circle at 50% 0%, #223342 0%, var(--bg) 46%, var(--bg-deep) 100%),
     repeating-linear-gradient(
       0deg,
-      rgb(255 220 170 / 4%) 0px,
-      rgb(255 220 170 / 4%) 1px,
+      rgb(190 210 230 / 4%) 0px,
+      rgb(190 210 230 / 4%) 1px,
       transparent 1px,
       transparent 42px
     ),
     repeating-linear-gradient(
       90deg,
-      rgb(255 220 170 / 4%) 0px,
-      rgb(255 220 170 / 4%) 1px,
+      rgb(190 210 230 / 4%) 0px,
+      rgb(190 210 230 / 4%) 1px,
       transparent 1px,
       transparent 42px
     );
@@ -77,7 +77,7 @@ body {
 }
 
 .chain-ring {
-  fill: var(--parchment);
+  fill: var(--bg);
   stroke: var(--ink-soft);
   stroke-width: 2.5;
 }
@@ -212,7 +212,7 @@ h1 {
   height: 430px;
   padding: 26px;
 
-  background: linear-gradient(180deg, #2c2116 0%, #180f09 100%);
+  background: linear-gradient(180deg, #1f2e3b 0%, #0e161e 100%);
 }
 
 .game-image-container img {
